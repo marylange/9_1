@@ -89,7 +89,7 @@ const expected_result = [
 // Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene - o pelo livro mais velho.
 function oldBooks(livro) {
   const livrosOrdenados = Object.values(livro).filter((book) => book.releaseYear <= 1960);
-  return livrosOrdenados.sort((a,b) => a.releaseYear - b.releaseYear);
+  return livrosOrdenados.sort((a, b) => a.releaseYear - b.releaseYear);
 }
 console.log(oldBooks(books))
 assert.deepEqual(oldBooks(books), expected_result);
